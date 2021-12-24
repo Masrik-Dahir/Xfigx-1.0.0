@@ -1464,7 +1464,7 @@ Description of Fig file format.
 This directory contains libraries of Fig objects such as electrical symbols,
 logic symbols, etc.
 .TP
-.I /usr/share/X11/app-defaults/Fig
+.I /usr/local/share/X11/app-defaults/Fig
 Application defaults file.
 .TP
 .I /usr/local/share/applications/xfig.desktop

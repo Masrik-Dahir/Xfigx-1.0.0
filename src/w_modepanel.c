@@ -14,6 +14,7 @@
  *
  */
 
+#include "e_ffst.h"
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -120,6 +121,7 @@ static void	stub_anglemeas_selected(void);
 static void	stub_lenmeas_selected(void);
 static void	stub_areameas_selected(void);
 static void	stub_tangent_selected(void);
+static void stub_ffst_selected(void);
 
 /**************	    local variables and routines   **************/
 
@@ -288,6 +290,10 @@ mode_sw_info mode_switches[] = {
 
 	{&unittoggle_ic, F_NULL, toggle_in_cm, M_ALL, I_NONE,
         "Toggle units between inches and centimeters",
+        False, NULL, (Pixmap)0, (Pixmap)0},
+
+	{&ffst_ic, F_NULL, ffst_selected, M_ALL, I_NONE,
+        "select muliple shapes",
         False, NULL, (Pixmap)0, (Pixmap)0},
 
 	/* This must be last for create_mode_panel() (in w_canvas.c) */
@@ -994,5 +1000,10 @@ stub_areameas_selected(void)
 	change_mode(&areameas_ic);
 }
 
+static void
+stub_ffst(void)
+{
+    change_mode(&ffst_ic);
+}
 
 

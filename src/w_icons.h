@@ -134,7 +134,7 @@ extern icon_struct	anglemeas_ic;
 extern icon_struct	lenmeas_ic;
 extern icon_struct	areameas_ic;
 extern icon_struct  unittoggle_ic;
-
+extern icon_struct  ffst_ic;
 /* misc icons */
 
 extern icon_struct	kbd_ic;
