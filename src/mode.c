@@ -15,7 +15,7 @@
  * and this permission notice remain intact.
  *
  */
-
+#define F_FFST 18;
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
