@@ -696,14 +696,14 @@ clean-checkLIBRARIES:
 ../lib/$(am__dirstamp):
 	@$(MKDIR_P) ../lib/
 	@: > ../lib/$(am__dirstamp)
+../lib/strchr.$(OBJEXT): ../lib/$(am__dirstamp)
+../lib/strrchr.$(OBJEXT): ../lib/$(am__dirstamp)
 ../lib/isascii.$(OBJEXT): ../lib/$(am__dirstamp)
+../lib/strcasecmp.$(OBJEXT): ../lib/$(am__dirstamp)
 ../lib/strncasecmp.$(OBJEXT): ../lib/$(am__dirstamp)
-../lib/strstr.$(OBJEXT): ../lib/$(am__dirstamp)
 ../lib/strdup.$(OBJEXT): ../lib/$(am__dirstamp)
 ../lib/strndup.$(OBJEXT): ../lib/$(am__dirstamp)
-../lib/strcasecmp.$(OBJEXT): ../lib/$(am__dirstamp)
-../lib/strrchr.$(OBJEXT): ../lib/$(am__dirstamp)
-../lib/strchr.$(OBJEXT): ../lib/$(am__dirstamp)
+../lib/strstr.$(OBJEXT): ../lib/$(am__dirstamp)
 
 libxfig.a: $(libxfig_a_OBJECTS) $(libxfig_a_DEPENDENCIES) $(EXTRA_libxfig_a_DEPENDENCIES) 
 	$(AM_V_at)-rm -f libxfig.a

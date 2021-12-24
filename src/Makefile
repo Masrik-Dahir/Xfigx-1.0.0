@@ -137,8 +137,7 @@ libxfig_a_AR = $(AR) $(ARFLAGS)
 LIBOBJDIR = ../lib/
 am__dirstamp = $(am__leading_dot)dirstamp
 libxfig_a_DEPENDENCIES = $(LIBOBJS)
-
-am__libxfig_a_SOURCES_DIST = e_ffst.c e_ffst.h d_arcbox.c d_arcbox.h d_arc.c d_arc.h \
+am__libxfig_a_SOURCES_DIST = d_arcbox.c d_arcbox.h d_arc.c d_arc.h \
 	d_box.c d_box.h d_ellipse.c d_ellipse.h d_line.c d_line.h \
 	d_picobj.c d_picobj.h d_regpoly.c d_regpoly.h d_spline.c \
 	d_spline.h d_subspline.c d_subspline.h d_text.c d_text.h \
@@ -191,7 +190,7 @@ am__objects_6 = w_i18n.$(OBJEXT)
 #am__objects_7 = w_menuentry.$(OBJEXT) \
 #	SmeCascade.$(OBJEXT) SimpleMenu.$(OBJEXT) \
 #	SmeBSB.$(OBJEXT)
-am__objects_8 = e_ffst.$(OBJEXT) d_arcbox.$(OBJEXT) d_arc.$(OBJEXT) d_box.$(OBJEXT) \
+am__objects_8 = d_arcbox.$(OBJEXT) d_arc.$(OBJEXT) d_box.$(OBJEXT) \
 	d_ellipse.$(OBJEXT) d_line.$(OBJEXT) d_picobj.$(OBJEXT) \
 	d_regpoly.$(OBJEXT) d_spline.$(OBJEXT) d_subspline.$(OBJEXT) \
 	d_text.$(OBJEXT) e_addpt.$(OBJEXT) e_align.$(OBJEXT) \
@@ -231,7 +230,7 @@ am__objects_8 = e_ffst.$(OBJEXT) d_arcbox.$(OBJEXT) d_arc.$(OBJEXT) d_box.$(OBJE
 	$(am__objects_5) $(am__objects_6) $(am__objects_7)
 am_libxfig_a_OBJECTS = $(am__objects_8)
 libxfig_a_OBJECTS = $(am_libxfig_a_OBJECTS)
-am__xfig_SOURCES_DIST = e_ffst.c e_ffst.h d_arcbox.c d_arcbox.h d_arc.c d_arc.h d_box.c \
+am__xfig_SOURCES_DIST = d_arcbox.c d_arcbox.h d_arc.c d_arc.h d_box.c \
 	d_box.h d_ellipse.c d_ellipse.h d_line.c d_line.h d_picobj.c \
 	d_picobj.h d_regpoly.c d_regpoly.h d_spline.c d_spline.h \
 	d_subspline.c d_subspline.h d_text.c d_text.h dirstruct.h \
@@ -277,7 +276,7 @@ am__xfig_SOURCES_DIST = e_ffst.c e_ffst.h d_arcbox.c d_arcbox.h d_arc.c d_arc.h 
 	SmeBSB.c SmeBSBP.h
 am_xfig_OBJECTS = d_arcbox.$(OBJEXT) d_arc.$(OBJEXT) d_box.$(OBJEXT) \
 	d_ellipse.$(OBJEXT) d_line.$(OBJEXT) d_picobj.$(OBJEXT) \
-	d_regpoly.$(OBJEXT) d_spline.$(OBJEXT) d_subspline.$(OBJEXT) e_ffst.$(OBJEXT) \
+	d_regpoly.$(OBJEXT) d_spline.$(OBJEXT) d_subspline.$(OBJEXT) \
 	d_text.$(OBJEXT) e_addpt.$(OBJEXT) e_align.$(OBJEXT) \
 	e_arrow.$(OBJEXT) e_break.$(OBJEXT) e_chop.$(OBJEXT) \
 	e_compound.$(OBJEXT) e_convert.$(OBJEXT) e_copy.$(OBJEXT) \
@@ -338,7 +337,7 @@ am__depfiles_remade = ../lib/$(DEPDIR)/isascii.Po \
 	../lib/$(DEPDIR)/strstr.Po ./$(DEPDIR)/SimpleMenu.Po \
 	./$(DEPDIR)/SmeBSB.Po ./$(DEPDIR)/SmeCascade.Po \
 	./$(DEPDIR)/d_arc.Po ./$(DEPDIR)/d_arcbox.Po \
-	./$(DEPDIR)/d_box.Po ./$(DEPDIR)/d_ellipse.Po ./$(DEPDIR)/e_ffst.Po \
+	./$(DEPDIR)/d_box.Po ./$(DEPDIR)/d_ellipse.Po \
 	./$(DEPDIR)/d_line.Po ./$(DEPDIR)/d_picobj.Po \
 	./$(DEPDIR)/d_regpoly.Po ./$(DEPDIR)/d_spline.Po \
 	./$(DEPDIR)/d_subspline.Po ./$(DEPDIR)/d_text.Po \
@@ -565,7 +564,7 @@ AM_LDFLAGS = $(XLDFLAGS)
 xfig_LDADD = $(LIBOBJS) $(XLIBS)
 # xmkmf, in addition, sets the flag -DNEWARROWPROTO
 DISTCLEANFILES = splash.xbm splash.xpm version.xbm
-xfig_SOURCES = e_ffst.c e_ffst.h d_arcbox.c d_arcbox.h d_arc.c d_arc.h d_box.c d_box.h \
+xfig_SOURCES = d_arcbox.c d_arcbox.h d_arc.c d_arc.h d_box.c d_box.h \
 	d_ellipse.c d_ellipse.h d_line.c d_line.h d_picobj.c \
 	d_picobj.h d_regpoly.c d_regpoly.h d_spline.c d_spline.h \
 	d_subspline.c d_subspline.h d_text.c d_text.h dirstruct.h \
@@ -735,7 +734,6 @@ include ./$(DEPDIR)/SmeCascade.Po # am--include-marker
 include ./$(DEPDIR)/d_arc.Po # am--include-marker
 include ./$(DEPDIR)/d_arcbox.Po # am--include-marker
 include ./$(DEPDIR)/d_box.Po # am--include-marker
-include ./$(DEPDIR)/e_ffst.Po # am--include-marker
 include ./$(DEPDIR)/d_ellipse.Po # am--include-marker
 include ./$(DEPDIR)/d_line.Po # am--include-marker
 include ./$(DEPDIR)/d_picobj.Po # am--include-marker
@@ -1021,7 +1019,6 @@ distclean: distclean-am
 	-rm -f ./$(DEPDIR)/d_arc.Po
 	-rm -f ./$(DEPDIR)/d_arcbox.Po
 	-rm -f ./$(DEPDIR)/d_box.Po
-	-rm -f ./$(DEPDIR)/e_ffst.Po
 	-rm -f ./$(DEPDIR)/d_ellipse.Po
 	-rm -f ./$(DEPDIR)/d_line.Po
 	-rm -f ./$(DEPDIR)/d_picobj.Po
@@ -1189,7 +1186,6 @@ maintainer-clean: maintainer-clean-am
 	-rm -f ./$(DEPDIR)/d_arc.Po
 	-rm -f ./$(DEPDIR)/d_arcbox.Po
 	-rm -f ./$(DEPDIR)/d_box.Po
-	-rm -f ./$(DEPDIR)/e_ffst.Po
 	-rm -f ./$(DEPDIR)/d_ellipse.Po
 	-rm -f ./$(DEPDIR)/d_line.Po
 	-rm -f ./$(DEPDIR)/d_picobj.Po
