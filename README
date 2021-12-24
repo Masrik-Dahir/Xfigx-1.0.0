@@ -1,7 +1,9 @@
+[![Makefile CI](https://github.com/Masrik-Dahir/xfigx-1.0.0/actions/workflows/makefile.yml/badge.svg)](https://github.com/Masrik-Dahir/xfigx-1.0.0/actions/workflows/makefile.yml)
+
+
 ===============================================================
 XFIG - Facility for Interactive Generation of figures under X11
 ===============================================================
-[![Makefile CI](https://github.com/Masrik-Dahir/xfigx-1.0.0/actions/workflows/makefile.yml/badge.svg)](https://github.com/Masrik-Dahir/xfigx-1.0.0/actions/workflows/makefile.yml)
 
 
 Xfig is a menu-driven tool that allows the user to draw and manipulate objects
